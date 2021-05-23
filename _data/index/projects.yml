@@ -1,5 +1,5 @@
 - name: Custom Linux Desktop
-  descr: "The creation of a linux(debian) image to be deployed in a internal client, with custom desktop experience and layout, and the correspondent restrictions within, and AD incorporation."
+  descr: "The creation of a linux(debian) image to be deployed in an internal client, with custom desktop experience and layout, and the correspondent restrictions within, and AD incorporation."
 
 - name: Ansible Workshop
   descr: "The design and implementation of a reusable workshop of Ansible for Sales, with Linux, Windows, and Cisco machines, showcasing autmation, deployment, and security compliance."
