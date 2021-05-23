@@ -1,4 +1,8 @@
-- name: leonids
-  descr: "Bacon ipsum dolor sit amet doner meatball jowl short ribs, chicken prosciutto salami frankfurter. Pig drumstick turducken short ribs, brisket meatloaf ham hock shankle andouille corned beef strip steak. Venison ham bresaola strip steak. Pork belly ribeye prosciutto t-bone."
-  image: pong.png
-  github: https://github.com/renyuanz/leonids
+- name: Custom Linux Desktop
+  descr: "The creation of a linux(debian) image to be deployed in a internal client, with custom desktop experience and layout, and the correspondent restrictions within, and AD incorporation."
+
+- name: Ansible Workshop
+  descr: "The design and implementation of a reusable workshop of Ansible for Sales, with Linux, Windows, and Cisco machines, showcasing autmation, deployment, and security compliance."
+  
+- name: Network Redesign
+  descr: "A complete redesigned of the internal network layout of Syone, from routing/swtching to roadwarrior VPN, and Hybrid Cloud implementation. Additional remark: Incredibly satisfying."
