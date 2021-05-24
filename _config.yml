@@ -35,8 +35,8 @@ kramdown:
 owner:
   name: ruados
   avatar: face.png
-  job: "A sysadmin with no good selfies"
-  bio: "Be Wise For Once"
+  job: "Be Wise For Once"
+  bio: "A sysadmin with no good selfies"
   email:
   disqus-shortname:
   twitter: #username
