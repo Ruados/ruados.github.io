@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: Ruados
+title: ruados
 email:
 description: Be Wise For Once
 url: # the base hostname & protocol for your site
@@ -33,7 +33,7 @@ kramdown:
 ####################################
 #
 owner:
-  name: Ruados
+  name: ruados
   avatar: face.png
   job: "A sysadmin with no good selfies"
   bio: "Be Wise For Once"
