@@ -1,8 +1,11 @@
 - name: Custom Linux Desktop
-  descr: "The creation of a linux(debian) image to be deployed in an internal client, with custom desktop experience and layout, and the correspondent restrictions within, and AD incorporation."
+  descr: "The creation of a linux(Debian) image to be deployed in an internal client, with custom desktop experience and layout, and the correspondent restrictions within, and AD incorporation."
 
 - name: Ansible Workshop
   descr: "The design and implementation of a reusable workshop of Ansible for sales team, with Linux, Windows, and Cisco machines, showcasing automation, deployment, and security compliance."
   
 - name: Network Redesign
   descr: "A complete redesigned of the internal network layout of Syone, from routing/swtching to roadwarrior VPN with LDAP, and Hybrid Cloud implementation. Additional remark: Incredibly satisfying."
+
+- name: Internal BNP Paribas Application
+  descr: "Applicational support L1 and L2 to an internal financial securities application on BNP Paribas. This support included client support, maintenance of the servers were the several components were hosted, and incident management. Main technologies used were RHEL and Oracle PL/SQL, rest being Java code built in-house by the developers."
