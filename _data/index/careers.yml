@@ -1,6 +1,10 @@
+- name: SoonTM
+  date: <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+
+
 - name: BNP Paribas Securities
   link: https://securities.bnpparibas.com/
-  date: November 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: November 2019 - November 2021
   job: IT Consultant - Applicational Support
 
 - name: Syone
