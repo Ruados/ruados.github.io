@@ -35,16 +35,17 @@ In case you are running a minimal installation, as I am, and do not have this pa
 	dnf install -y at
     {% endraw %}
 
-![Services](https://ruados.github.io/post_images/20210921_LawsOfTime_03.png)
+![Installation of at, nothing to see here.](https://ruados.github.io/post_images/20210921_LawsOfTime_03.png)
 
 Again, if you see that the service isn't running, you can just do as shared in the screenshot.
+
+![Services](https://ruados.github.io/post_images/20210921_LawsOfTime_04.png)
     {% raw %}
 	systemctl enable --now atd
     {% endraw %}
 The enable is to enable the service every time the system boots up. The --now is for the service to also start now.
 If we wanted a service to run, but only during current runtime, we'd use just start instead.
 
-![Services](https://ruados.github.io/post_images/20210921_LawsOfTime_04.png)
 
 The command at is used essentially ad-hoc. We want a specific task to run once at (heh) 3 minutes from now.
 To do that, we simply:
@@ -61,7 +62,7 @@ As you can see, I first ran date simply to show the date and time, then I execut
 And alas, when the time came, there it was.
 Should mention, atq is at query, it is to query what tasks are planned.
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_06.png)
+![Multiple jobs.](https://ruados.github.io/post_images/20210921_LawsOfTime_06.png)
 
 The syntax is very flexible. As you can see from the screenshot, we can use a lot of different time formats, but it's very human readable.
 
@@ -71,13 +72,13 @@ Now, say I don't remember what will run next Sunday. For that I simply do:
 	at -c [ID]
     {% endraw %}
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_08.png)
+![A lot of text. Spooky.](https://ruados.github.io/post_images/20210921_LawsOfTime_08.png)
 
 As you can see, lots of stuff, but most are system variables, we can see in the end what we inputed to the ran.
 
 Last command. Say you no longer want to run job 4. For that you do atrm 4. And that's it for at.
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_09.png)
+![Queries.](https://ruados.github.io/post_images/20210921_LawsOfTime_09.png)
 
 #cron
 
@@ -88,11 +89,11 @@ First things first, to check if cron service is running
 	systemctl status crond
     {% endraw %}
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_10_cron.png)
+![More services.](https://ruados.github.io/post_images/20210921_LawsOfTime_10_cron.png)
 
 With a simple cat, we can see most of what there's to configure:
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_11_cron.png)
+![Standard boring empty crontab.](https://ruados.github.io/post_images/20210921_LawsOfTime_11_cron.png)
 
 This I should mention, is the main cron file. You can use this file to configure all.
 
@@ -134,7 +135,7 @@ This is the command to install chrony out of the repos.
 
 The config file is /etc/chrony.conf. Bet you couldn't guess.
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_13_ntp.png)
+![Unaltered chrony config.](https://ruados.github.io/post_images/20210921_LawsOfTime_13_ntp.png)
 
 For purposes of RHCSA, to add a new ntp server, we add the following at the beginning of the file:
 
@@ -153,7 +154,7 @@ We must of course activate the service now, and before that, activate the ntp se
 
 And that's it. Congrats, now your machine is synced in time with other machines.
 
-![Time never stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_14_ntp.png)
+![Time never truly stops.](https://ruados.github.io/post_images/20210921_LawsOfTime_14_ntp.png)
 
 As I'm pulling from a pool of other servers, we can see we are synced with other multiple servers.
 On an entreprise environment, we'd only have a single local server synced with the atomic clock off the internet, and the rest of the machines in sync in this server. the server itself though could feed to others its own time, not necessarily in sync with the one authority in time, what's important is that the machines have the same time, or other things and services on the network can go off sync.
